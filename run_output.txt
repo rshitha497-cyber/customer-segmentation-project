@@ -1,0 +1,46 @@
+
+CUSTOMER SEGMENTATION USING K-MEANS
+==========================================
+Loading dataset: customers.csv
+Dataset loaded: 250 customers
+
+First five rows:
+ CustomerID Gender  Age  Annual Income (k$)  Spending Score (1-100)
+          1   Male   20                  25                      27
+          2 Female   18                  12                      21
+          3 Female   25                  15                      26
+          4 Female   29                  20                      28
+          5 Female   21                  22                      13
+
+Preprocessing and feature scaling completed.
+
+K-Means clustering completed with 5 clusters.
+Silhouette score: 0.650
+
+CUSTOMER SEGMENT SUMMARY
+         Customer_Count  Average_Age  Average_Income  Average_Spending
+Cluster                                                               
+0                    50        31.26           24.56             79.76
+1                    50        44.84           74.68             20.90
+2                    50        24.14           19.80             20.24
+3                    50        39.70           78.32             79.52
+4                    50        56.14           49.24             49.84
+
+PROJECT COMPLETED SUCCESSFULLY!
+Total customers: 250
+Number of clusters: 5
+Output folder: /mnt/data/Customer_Segmentation_Project/output
+Created: elbow_method.png, customer_segments.png, pca_clusters.png
+Created: segmented_customers.csv, customer_summary.csv
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
